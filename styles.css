@@ -1,34 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;700&family=Ms+Madi&display=swap');
 
-* {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-align: center;
-
-
-}
-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 header {
-  background-color:
   min-height: 100vh;
-
 }
+
 h1 {
   font-size: 60px;
+  width: 100vw;
+  justify-content: center;
+
 }
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+#header_img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header_img img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+
 #t_boogie {
   font-family: 'Bebas Neue', cursive;
+  animation: tBoogie 1s ease-out ;
+
 }
+
 #t_bounce {
   font-family: 'Josefin Sans', sans-serif;
-  letter-spacing:-15px;
+  letter-spacing: -0.08em;
+
+  animation: tBounce 1s ease-out 1s forwards;
+  transform: rotate(0.1turn);
+  opacity: 0;
 }
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 #t_mama {
   font-family: 'Ms Madi', cursive;
 }
+#t_portfolio {
+  font-family: 'Ms Madi', cursive;
+  font-size: 150px;
+}
+@keyframes tBoogie {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes tBounce {
+  0% {
+    transform: rotate(0.1turn);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+    transform: translateY(1px);
+  }
+}
+
