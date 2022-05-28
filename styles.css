@@ -69,6 +69,7 @@ h1 {
   font-size: 150px;
   position: relative;
   transform: translateY(10vh);
+  padding-top: 79px;
   /* animation: t_Portfolio 1s ease-out 2s forwards; */
 
 }
@@ -78,6 +79,9 @@ h1 {
 }
 #scroll_down{
   z-index: 1000;
+  color: blueviolet;
+  position: fixed;
+  bottom: 15px;
 }
 @keyframes tBoogie {
   0% {
@@ -112,4 +116,18 @@ h1 {
 section {
   height: 100vh;
 
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky-impact1 {
+  padding-top: 159px;
+}
+.sticky-impact2 {
+  padding-top: 79px;
 }
