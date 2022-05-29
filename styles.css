@@ -69,7 +69,12 @@ h1 {
   font-size: 150px;
   position: relative;
   transform: translateY(10vh);
-  padding-top: 79px;
+  margin-top: 79px;
+  width: 100vw;
+  background: rgb(255,255,255);
+  /*background: rgba(255,255,255, 0.6);*/
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.5) 20%,rgba(255,255,255,0.8) 40%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0.5) 80%, rgba(255,255,255,0) 100%);
+
   /* animation: t_Portfolio 1s ease-out 2s forwards; */
 
 }
