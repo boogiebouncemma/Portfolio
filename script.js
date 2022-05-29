@@ -42,11 +42,11 @@ var sticky = navbar.offsetTop;
 function navbarFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
-    tPortfolio.style.paddingTop = "158px";
+    tPortfolio.style.marginTop = "158px";
     //tScrollDown.classList.add("sticky-impact2")
   } else {
     navbar.classList.remove("sticky");
-    tPortfolio.style.paddingTop = "79px";
+    tPortfolio.style.marginTop = "79px";
     //tScrollDown.classList.remove("sticky-impact2")
   }
 }
